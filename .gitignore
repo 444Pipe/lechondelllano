@@ -1,0 +1,10 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales y pruebas locales
+_test-*.html
+*.log
+node_modules/
+.env
