@@ -367,7 +367,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .zona__body li::before { content: "•"; color: var(--rojo); font-weight: 800; }
 
 /* ---------- Galería ---------- */
-.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 210px; gap: 14px; }
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 210px; grid-auto-flow: dense; gap: 14px; }
 .gallery figure { margin: 0; position: relative; border-radius: 20px; overflow: hidden; background: linear-gradient(145deg, var(--rojo), var(--rojo-900)); cursor: zoom-in; transform: translateZ(0); }
 .gallery figure:nth-child(1) { grid-column: span 2; grid-row: span 2; }
 .gallery figure:nth-child(4) { grid-row: span 2; }
