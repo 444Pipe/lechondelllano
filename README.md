@@ -53,6 +53,8 @@ railway.json                    Configuración del despliegue en Railway
   los próximos sábados, domingos y lunes festivos, además del aviso "¡Hoy hay lechona!".
 - **Calculadora**: recomienda cojín o lechona según el número de personas y arma el mensaje de WhatsApp.
 - **Armador de pedido**: el formulario no envía datos a ningún servidor; construye el mensaje y abre WhatsApp.
+- **Pantalla de carga**: aparece una vez por sesión (se recuerda en `sessionStorage`), se oculta al terminar de cargar
+  y nunca dura más de 5 s. Las frases y tiempos están en `initLoader` dentro de `main.js`.
 - **Todos los botones de WhatsApp** usan el atributo `data-wa="mensaje"`; el número se toma de `data.js`.
 
 ## Publicar en Railway

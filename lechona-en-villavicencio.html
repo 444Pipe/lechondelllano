@@ -143,8 +143,21 @@
   ]
 }
   </script>
+  <script>try{document.documentElement.classList.add(sessionStorage.getItem("ldl-cargado")?"sin-loader":"is-loading")}catch(e){document.documentElement.classList.add("is-loading")}</script>
 </head>
 <body>
+  <!-- Pantalla de carga (se muestra una vez por sesión; ver initLoader en main.js) -->
+  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Cargando Lechón del Llano">
+    <div class="loader__inner">
+      <div class="loader__figure">
+        <span class="loader__ring" aria-hidden="true"></span>
+        <span class="loader__ring loader__ring--2" aria-hidden="true"></span>
+        <img class="loader__logo" src="static/img/logo-sm.png" width="150" height="150" alt="">
+      </div>
+      <p class="loader__text"><span data-loader-text>Prendiendo el horno…</span></p>
+      <div class="loader__bar" aria-hidden="true"><span data-loader-bar></span></div>
+    </div>
+  </div>
   <!-- Sprite de iconos SVG (trazos estilo Lucide/Tabler). Uso: <svg><use href="#i-nombre"></use></svg> -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
     <symbol id="i-cerdo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 7.6 4 3.6l5.1 1.7"/><path d="M17.8 7.6 20 3.6l-5.1 1.7"/><path d="M12 5.5c-4.4 0-7.5 3-7.5 7.2S7.6 20 12 20s7.5-3.1 7.5-7.3S16.4 5.5 12 5.5Z"/><rect x="8.5" y="12" width="7" height="4.4" rx="2.2"/><path d="M10.8 14.2h.01M13.2 14.2h.01"/><path d="M8.8 9.3h.01M15.2 9.3h.01"/></symbol>
